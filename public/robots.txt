@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://devdaily.org
+
+# Sitemaps
+Sitemap: https://devdaily.org/sitemap.xml
