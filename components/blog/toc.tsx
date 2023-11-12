@@ -11,7 +11,7 @@ const TOC = ({ blog }: { blog: Blog }) => {
         <summary className="cursor-pointer text-lg font-semibold capitalize dark:text-light">
           Tables Of Content
         </summary>
-        <ul className="my-4 font-in text-base no-underline dark:text-light">
+        <ul className="my-4 font-in text-sm no-underline dark:text-light">
           {blog.toc.map((heading: any, i: any) => (
             <li key={`#${heading.slug}`} className="py-1">
               <a
@@ -20,7 +20,7 @@ const TOC = ({ blog }: { blog: Blog }) => {
                 className="flex items-center justify-start border-solid border-dark/40 data-[level=two]:border-t data-[level=three]:pl-6 data-[level=two]:pl-0 data-[level=two]:pt-2 dark:border-light/40"
               >
                 {heading.level === "three" ? (
-                  <span className="mr-2 flex h-1 w-1 rounded-full bg-dark">
+                  <span className="flex h-1 w-1 rounded-full bg-dark">
                     &nbsp;
                   </span>
                 ) : null}

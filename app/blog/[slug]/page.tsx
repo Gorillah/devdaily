@@ -117,10 +117,10 @@ const BlogPage = ({ params }: { params: { slug: string } }) => {
           />
         </div>
         <BlogDetails blog={blog} slug={params.slug} />
-        <div className="container-full relative my-20 grid grid-cols-12 gap-y-16 md:relative">
+        <div className="container-full relative my-20 grid grid-cols-12 gap-y-16 lg:gap-x-12 md:relative">
           <TOC blog={blog} />
           <RenderMdx blog={blog} />
-          <div className="col-span-2 h-full w-full bg-blue-200"></div>
+          <div className="lg:col-span-2"></div>
         </div>
       </article>
     </>
