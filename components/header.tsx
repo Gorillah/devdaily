@@ -1,20 +1,20 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import Logo from "@/components/logo"
-import Link from "next/link"
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai"
-import { BsFillMoonFill, BsFillSunFill } from "react-icons/bs"
-import siteMetadata from "@/lib/siteMetadata"
-import { useThemeSwitch } from "@/hooks/useThemeSwitch"
-import { cx } from "@/lib/utils"
+import { useState } from "react";
+import Logo from "@/components/logo";
+import Link from "next/link";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { BsFillMoonFill, BsFillSunFill } from "react-icons/bs";
+import siteMetadata from "@/lib/siteMetadata";
+import { useThemeSwitch } from "@/hooks/useThemeSwitch";
+import { cx } from "@/lib/utils";
 
 const Header = () => {
-  const { mode, setMode } = useThemeSwitch()
-  const [click, setClick] = useState(false)
+  const { mode, setMode } = useThemeSwitch();
+  const [click, setClick] = useState(false);
 
   return (
-    <header className="container-full flex w-full items-center justify-between p-3">
+    <header className="container-full flex w-full items-center justify-between py-4 sm:py-4 lg:py-6">
       <Logo />
       <button
         className="z-50 inline-block p-3 md:hidden"
@@ -93,7 +93,7 @@ const Header = () => {
         </a>
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
